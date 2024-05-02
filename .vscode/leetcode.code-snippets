@@ -1,0 +1,39 @@
+{
+	"leetcode": {
+		"prefix": "leetcode",
+		"isFileTemplate": true,
+		"scope": "cpp",
+		"body": [
+			"/*",
+			" * Author: Tomasz Kośnikowski (tokox)",
+			" * Time: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND} UTC ${CURRENT_TIMEZONE_OFFSET}",
+			" * Task: ${TM_FILENAME_BASE/^0*(\\d+\\.).*/$1/} ${1:${TM_FILENAME_BASE}}",
+			" * Link: https://leetcode.com/problems/${TM_FILENAME_BASE/\\d{4}\\.(.*)/$1/}",
+			" */",
+			"",
+			"#ifdef LEETCODE_ALONE",
+			"#include <iostream>",
+			"using namespace std;",
+			"#endif",
+			"",
+			"#ifdef LEETCODE_ALONE",
+			"",
+			"#endif",
+			"",
+			"${2:${CLIPBOARD}}",
+			"",
+			"#ifdef LEETCODE_ALONE",
+			"int main()",
+			"{",
+			"\tiostream::sync_with_stdio(false);",
+			"\tcout.tie(nullptr);",
+			"\tcin.tie(nullptr);",
+			"",
+			"${0}",
+			"",
+			"\treturn 0;",
+			"}",
+			"#endif"
+		]
+	}
+}
